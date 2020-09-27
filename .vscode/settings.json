@@ -1,0 +1,15 @@
+{
+  "typescript.tsdk": "./node_modules/typescript/lib",
+
+  "files.exclude": {
+    "**/.git": true,
+    "**/.DS_Store": true,
+    "**/.cache-loader": true,
+    "**/dist": true,
+    "**/.next": true,
+    "**/cache": true
+  },
+  "javascript.preferences.importModuleSpecifier": "relative",
+  "typescript.preferences.importModuleSpecifier": "relative",
+  "editor.formatOnSave": true
+}
