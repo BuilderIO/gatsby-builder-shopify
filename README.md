@@ -4,11 +4,9 @@
 
 :heavy_check_mark: Typescript + Theme-UI
 
-:heavy_check_mark: Gatsby Typegen : for even better typescript support
+:heavy_check_mark: [gatsby-theme-shopify-manager](https://github.com/thetrevorharmon/gatsby-theme-shopify-manager) The easiest way to build a shopify store on gatsby.
 
-:heavy_check_mark: [gatsby-theme-shopify-manager](https://github.com/thetrevorharmon/gatsby-theme-shopify-manager) The easiest way to builder a shopify store on gatsby.
-
-:heavy_check_mark: Analytics and heatmaps out of the box.
+:heavy_check_mark: Analytics, A/B testing, product augmentation, and heatmaps out of the box.
 <br />
 <br />
 <img src="https://imgur.com/HjBWIbv.gif" alt="Editor example" />
@@ -19,7 +17,7 @@ We are working on ways to auto-create your organiztion with the desired configur
 
 - Create a private app in your shopify store and update the store name and token in `.env` files.
 
-- Signup for [Builder.io](https://builder.io/signup), use your API Key in `.env` files.
+- Signup for [Builder.io](https://builder.io/signup), Find your [public API key](https://builder.io/account/organization) and add it in `.env` files.
 
 - Clone this repository or use `gatsby new`
 
