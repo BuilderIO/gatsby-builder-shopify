@@ -29,6 +29,15 @@
             "value": "max-age=300"
           }
         ]
+      },
+      {
+        "source": "**/*",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "public, max-age=600, s-maxage=2628000, stale-while-revalidate=2628000, stale-if-error=2628000"
+          }
+        ]
       }
     ]
   }
