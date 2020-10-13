@@ -13,8 +13,6 @@
 
 ## Quick Start
 
-We are working on ways to auto-create your organiztion with the desired configurations for a Gatsby/Shopify setup, but for now here are the steps:
-
 - Create a private app in your shopify store and update the store name and token in `.env` files.
 
 - Signup for [Builder.io](https://builder.io/signup), Find your [public API key](https://builder.io/account/organization) and add it in `.env` files.
