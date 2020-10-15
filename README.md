@@ -9,7 +9,7 @@
 :heavy_check_mark: Analytics, A/B testing, product augmentation, and heatmaps out of the box.
 <br />
 <br />
-<img src="https://imgur.com/HjBWIbv.gif" alt="Editor example" />
+<img src="https://user-images.githubusercontent.com/5093430/96180755-c331ff00-0ee7-11eb-8b9f-b5e80ba8052e.gif" alt="Editor example" />
 
 ## Quick Start
 
