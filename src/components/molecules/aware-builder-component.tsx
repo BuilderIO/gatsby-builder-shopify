@@ -1,7 +1,7 @@
 import { Builder, builder, BuilderComponent } from '@builder.io/react';
 import { BuilderPageProps } from '@builder.io/react/src/components/builder-page.component';
 import '@builder.io/widgets';
-import React, { useMemo } from 'react';
+import React from 'react';
 import Link from '../atoms/link';
 import { useCartCount, useAddItemToCart } from 'gatsby-theme-shopify-manager/src';
 
@@ -16,25 +16,22 @@ const AwareBuilderComponent: React.FC<Partial<BuilderPageProps>> = ({
 }) => {
   const cartCount = useCartCount();
   const addItem = useAddItemToCart();
-  return useMemo(
-    () => (
-      <BuilderComponent
-        renderLink={props => {
-          const internal = props.target !== '_blank' && /^\/(?!\/)/.test(props.href!);
-          if (internal) {
-            return <Link url={props.href!} {...props} />;
-          }
-          return <a {...props} />;
-        }}
-        context={{ cartCount, addItem }}
-        data={{
-          ...data,
-        }}
-        {...(!Builder.isEditing && !Builder.isPreviewing && content && { content })}
-        {...props}
-      />
-    ),
-    []
+  return (
+    <BuilderComponent
+      renderLink={props => {
+        const internal = props.target !== '_blank' && /^\/(?!\/)/.test(props.href!);
+        if (internal) {
+          return <Link url={props.href!} {...props} />;
+        }
+        return <a {...props} />;
+      }}
+      context={{ cartCount, addItem }}
+      data={{
+        ...data,
+      }}
+      {...(!Builder.isEditing && !Builder.isPreviewing && content && { content })}
+      {...props}
+    />
   );
 };
 
