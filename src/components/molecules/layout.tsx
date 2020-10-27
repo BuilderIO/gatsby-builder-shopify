@@ -3,13 +3,15 @@ import React from 'react';
 import { Button, ThemeProvider, jsx } from 'theme-ui';
 import { Helmet } from 'react-helmet';
 import theme from '../../gatsby-plugin-theme-ui';
-import Footer from './footer';
+import './footer/footer.builder';
 import useBuilderHeader from '../../hooks/use-builder-header';
 import AwareBuilderComponent from './aware-builder-component';
 import './header/header.builder';
 import 'normalize.css';
+import useBuilderFooter from '../../hooks/use-builder-footer';
 const Layout: React.FunctionComponent = ({ children }) => {
   const header = useBuilderHeader();
+  const footer = useBuilderFooter();
 
   return (
     <ThemeProvider theme={theme}>
@@ -26,7 +28,7 @@ const Layout: React.FunctionComponent = ({ children }) => {
         }}
       >
         <main>{children}</main>
-        <Footer />
+        <AwareBuilderComponent model="footer" content={footer} />
       </div>
     </ThemeProvider>
   );
