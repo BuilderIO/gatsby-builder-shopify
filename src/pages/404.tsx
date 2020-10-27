@@ -21,7 +21,9 @@ const NotFound: React.FC = () => (
 const FourOhFour: React.FC = () => {
   if (Builder.isEditing || Builder.isPreviewing) {
     return (
-      <Router>{(Builder.isEditing || Builder.isPreviewing) && <BuilderPreview path="/*" />}</Router>
+      <Router>
+        <BuilderPreview path="/*" />
+      </Router>
     );
   }
   return <NoSSR>{process.env.NODE_ENV === 'development' ? <AsyncDev404 /> : <NotFound />}</NoSSR>;
