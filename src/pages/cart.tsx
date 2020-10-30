@@ -61,7 +61,7 @@ const CartPage = () => {
       </div>
       <div>
         <Link
-          url={`/product/${item.variant.product.handle}`}
+          url={`/product/${item.variant.product.handle}/`}
           sx={{ fontSize: 3, m: 0, fontWeight: 700 }}
         >
           {item.title}

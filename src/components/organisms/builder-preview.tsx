@@ -1,4 +1,4 @@
-import React, { useContext, useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Router } from '@reach/router';
 import ProductPage from '../../templates/product-page';
 import PageTemplate from '../../templates/page';
