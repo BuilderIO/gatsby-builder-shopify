@@ -3,7 +3,7 @@ import { useStaticQuery, graphql } from 'gatsby';
 const builderFooterQuery = graphql`
   query Footer {
     allBuilderModels {
-      oneFooter {
+      oneFooter(options: { noTraverse: false }) {
         content
       }
     }

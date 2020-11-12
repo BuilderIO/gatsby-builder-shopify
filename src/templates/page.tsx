@@ -36,7 +36,7 @@ export default PageTemplate;
 export const query = graphql`
   query onePage($path: String!) {
     allBuilderModels {
-      onePage(target: { urlPath: $path }, options: { cachebust: true }) {
+      onePage(target: { urlPath: $path }, options: { cachebust: true, noTraverse: false }) {
         content
       }
     }
