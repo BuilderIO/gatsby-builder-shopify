@@ -3,7 +3,7 @@ import { useStaticQuery, graphql } from 'gatsby';
 const builderHeaderQuery = graphql`
   query Header {
     allBuilderModels {
-      oneHeader {
+      oneHeader(options: { noTraverse: false }) {
         content
       }
     }

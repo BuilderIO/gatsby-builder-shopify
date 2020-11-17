@@ -24,7 +24,10 @@ export default ProductPage;
 export const ProductPageQuery = graphql`
   query productPage($handle: String!) {
     allBuilderModels {
-      oneProductPageTemplate(target: { productHandle: $handle }, options: { cachebust: true }) {
+      oneProductPageTemplate(
+        target: { productHandle: $handle }
+        options: { cachebust: true, noTraverse: false }
+      ) {
         content
       }
     }
