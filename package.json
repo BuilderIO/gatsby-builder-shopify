@@ -27,7 +27,6 @@
     "gatsby-plugin-layout": "^1.2.1",
     "gatsby-plugin-loadable-components-ssr": "^2.1.0",
     "gatsby-plugin-offline": "^3.2.13",
-    "gatsby-plugin-preact": "^4.0.13",
     "gatsby-plugin-react-helmet": "^3.3.6",
     "gatsby-plugin-sharp": "^2.6.36",
     "gatsby-plugin-theme-ui": "^0.3.0",

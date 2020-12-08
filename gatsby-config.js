@@ -13,8 +13,6 @@ module.exports = {
   plugins: [
     `gatsby-plugin-typescript`,
     `gatsby-plugin-react-helmet`,
-    // optional, for better performance
-    `gatsby-plugin-preact`,
     {
       resolve: `gatsby-plugin-layout`,
       options: {
