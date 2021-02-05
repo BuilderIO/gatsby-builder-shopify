@@ -2,10 +2,9 @@ import React from 'react';
 import { Container } from 'theme-ui';
 import SEO from '../components/atoms/seo';
 import { Builder } from '@builder.io/react';
-import { Router } from '@reach/router';
 import loadable from '@loadable/component';
-import BuilderPreview from '../components/organisms/builder-preview';
 import NoSSR from '../components/atoms/no-ssr';
+import PageTemplate from '../templates/page';
 
 const AsyncDev404 = loadable(() => import('../components/organisms/dev-404'));
 
@@ -20,11 +19,7 @@ const NotFound: React.FC = () => (
 
 const FourOhFour: React.FC = () => {
   if (Builder.isEditing || Builder.isPreviewing) {
-    return (
-      <Router>
-        <BuilderPreview path="/*" />
-      </Router>
-    );
+    return <PageTemplate />;
   }
   return <NoSSR>{process.env.NODE_ENV === 'development' ? <AsyncDev404 /> : <NotFound />}</NoSSR>;
 };

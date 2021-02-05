@@ -11,29 +11,67 @@
 <br />
 <img src="https://user-images.githubusercontent.com/5093430/96180755-c331ff00-0ee7-11eb-8b9f-b5e80ba8052e.gif" alt="Editor example" />
 
-## Quick Start
+## Get Started
 
-- Create a private app in your shopify store and update the store name and token in `.env` files.
+### Install the Builder.io cli
 
-- Signup for [Builder.io](https://builder.io/signup), Find your [public API key](https://builder.io/account/organization) and add it in `.env` files.
+```
+npm install @builder.io/cli -g
+```
 
-- Clone this repository or use `gatsby new`
+### Clone this repo
 
-  ```shell
-  # create a new Gatsby site using this starter
-  gatsby new my-headless-store https://github.com/BuilderIO/gatsby-builder-shopify
-  ```
+using git
 
-- Add the Required Builder.io models to your organization:
+```
+git clone https://github.com/BuilderIO/gatsby-builder-shopify
+```
 
-  1.  `Product Page Template`: create a model of type component, assigning the editing url to your `{{host url}}/product`.
+### Generate your Builder.io space
 
-  2.  `Header`: create a model of type component, assigning the editing url to your host url.
+<!-- TODO: link "private key" to a forum post or doc showing how to create that -->
 
-- Create minimal content:
-  1. Add a new header entry , and drag and drop the registred header component.
-  2. Create a home page: a new entry from `Page` model with url path set to `/`, you can use all of the registered components and builder's built-in components as well to build this page.
-  3. Create a new entry for `Product Page Template`, and use the `Product Page Details` custom component.
+[Signup for Builder.io](builder.io/signup), then go to your [organization settings page](https://builder.io/account/organization?root=true), create a private key and copy it, then create your space and give it a name
+
+```
+cd gatsby-builder-shopify
+builder create -k [private-key] -n [space-name] -d
+```
+
+This command when done it'll print your new space's public api key, copy it and add as the value for `GATSBY_BUILDER_PUBLIC_KEY` into the .env files (`.env.production` and `.env.development`)
+
+```
+GATBY_BUILDER_PUBLIC_KEY=...
+```
+
+### Connect Shopify
+
+Now you have a space clone matching the spec defined in this repo, you'll need to connect it to your shopify store.
+
+Create a [private app](https://help.shopify.com/en/manual/apps/private-apps) in your Shpoify store and generate both admin api keys and storefront API token.
+
+Access your newly created space, by selecting it from the [list of spaces](https://builder.io/spaces) in your organization, then from space settings, configure the `@builder.io/plugin-shopify` with the required details: admin api key / password, store domain, please feel free to ignore the `import your products/collections` step since it's not needed for this starter.
+
+Add your storefront api token to the .env files (`.env.all`)
+
+```
+GATSBY_SHOPIFY_ACCESS_TOKEN=...
+GATSBY_SHOP_NAME=...
+```
+
+### Install dependencies
+
+```
+yarn
+```
+
+### Run the dev server
+
+```
+yarn develop
+```
+
+It'll start a dev server at `http://localhost:8000`
 
 ## 🧐 What's inside?
 

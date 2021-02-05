@@ -1,6 +1,6 @@
 import { Builder, builder } from '@builder.io/react';
 import loadable from '@loadable/component';
-builder.init(process.env.BUILDER_API_KEY!);
+builder.init(process.env.GATSBY_BUILDER_API_KEY!);
 
 const LazyAllProducts = loadable(() => import('./all-products'));
 

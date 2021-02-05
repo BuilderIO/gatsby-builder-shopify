@@ -1,0 +1,56 @@
+{
+  "data": {
+    "inputs": [],
+    "productPreview": {
+      "@type": "@builder.io/core:Request",
+      "request": {
+        "url": "https://cdn.builder.io/api/v1/shopify/products/{{this.options.product}}.json?apiKey=6d39f4449e2b4e6792a793bb8c1d9615",
+        "method": "GET"
+      },
+      "options": { "product": 6206263787699 }
+    },
+    "state": { "deviceSize": "large", "location": { "path": "", "query": {} } },
+    "blocks": [
+      {
+        "@type": "@builder.io/sdk:Element",
+        "@version": 2,
+        "bindings": {
+          "component.options.product": "state.product",
+          "component.options.title": "state.product.title",
+          "component.options.description": "state.product.descriptionHtml"
+        },
+        "id": "builder-aa9150236c0a4b2fa01fc3ec02ba1301",
+        "component": { "name": "ProductPageDetails", "options": {} },
+        "responsiveStyles": {
+          "large": {
+            "display": "flex",
+            "flexDirection": "column",
+            "alignItems": "stretch",
+            "position": "relative",
+            "flexShrink": "0",
+            "boxSizing": "border-box",
+            "marginTop": "2px",
+            "paddingTop": "0px"
+          }
+        }
+      },
+      {
+        "@type": "@builder.io/sdk:Element",
+        "@version": 2,
+        "id": "builder-0eecfc7be3cc451f9d5379007523b142",
+        "component": { "name": "LatestProductsGridNoSSR", "options": {} },
+        "responsiveStyles": {
+          "large": {
+            "display": "flex",
+            "flexDirection": "column",
+            "alignItems": "stretch",
+            "position": "relative",
+            "flexShrink": "0",
+            "boxSizing": "border-box",
+            "marginTop": "20px"
+          }
+        }
+      }
+    ]
+  }
+}

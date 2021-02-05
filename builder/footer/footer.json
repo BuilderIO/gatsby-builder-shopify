@@ -1,0 +1,326 @@
+{
+  "@originContentId": "882089ce8e164dcb6034d183d631785a6c1f99ec93b9b54acd379fa1278cd66b",
+  "@originModelId": "ec0f6f43702ca2ce531fac106bc15bf0701a97e691c6681171cf33cce9158623",
+  "@originOrg": "6d39f4449e2b4e6792a793bb8c1d9615",
+  "createdBy": "pldtOvKDa6fvdX4zCxWYmRh99ao1",
+  "createdDate": 1603206518072,
+  "data": {
+    "cssCode": "/*\n* Custom CSS styles\n*\n* Global by default, but use `&` to scope to just this content, e.g.\n* \n*   & .foo {\n*     color: 'red'\n*   }\n*/\n\np a {\n    text-decoration: none;\n    color: inherit;\n}",
+    "customFonts": [
+      {
+        "family": "Roboto",
+        "isUserFont": true
+      }
+    ],
+    "inputs": [],
+    "state": {
+      "deviceSize": "large",
+      "location": {
+        "path": "",
+        "query": {}
+      }
+    },
+    "blocks": [
+      {
+        "@type": "@builder.io/sdk:Element",
+        "@version": 2,
+        "id": "builder-2ffa01d4bebf46819ebf3814ef965145",
+        "component": {
+          "name": "Core:Section",
+          "options": {
+            "maxWidth": 1200
+          }
+        },
+        "children": [
+          {
+            "@type": "@builder.io/sdk:Element",
+            "@version": 2,
+            "id": "builder-1c96c5bb44eb48c78383a24701b0169e",
+            "children": [
+              {
+                "@type": "@builder.io/sdk:Element",
+                "@version": 2,
+                "id": "builder-6aac5a546b874ac6b4aff9c8e7352c1b",
+                "component": {
+                  "name": "Custom Code",
+                  "options": {
+                    "code": "<svg\n  width=\"30\"\n  height=\"30\"\n  viewBox=\"0 0 30 30\"\n  fill=\"none\"\n  xmlns=\"http://www.w3.org/2000/svg\"\n>\n  <path\n    d=\"M29.0939 4.65565L13.9806 1.25732L1 5.34059M29.0939 4.65565L16.3766 9.42385M29.0939 4.65565L28.6463 23.3333L16.3766 29.2869M16.3766 9.42385L1 5.34059M16.3766 9.42385V29.2869M1 5.34059L1.55293 24.0972L16.3766 29.2869\"\n    stroke=\"white\"\n    stroke-width=\"1.22147\"\n    stroke-linejoin=\"round\"\n  />\n</svg>\n"
+                  }
+                },
+                "responsiveStyles": {
+                  "large": {
+                    "display": "flex",
+                    "flexDirection": "column",
+                    "alignItems": "stretch",
+                    "position": "relative",
+                    "flexShrink": "0",
+                    "boxSizing": "border-box"
+                  }
+                }
+              },
+              {
+                "@type": "@builder.io/sdk:Element",
+                "@version": 2,
+                "id": "builder-4e521b5612634679bd601a1a21a57489",
+                "component": {
+                  "name": "Text",
+                  "options": {
+                    "text": "<p>BUILDER</p>"
+                  }
+                },
+                "responsiveStyles": {
+                  "large": {
+                    "display": "flex",
+                    "flexDirection": "column",
+                    "alignItems": "stretch",
+                    "position": "relative",
+                    "flexShrink": "0",
+                    "boxSizing": "border-box",
+                    "marginLeft": "20px",
+                    "lineHeight": "normal",
+                    "height": "auto",
+                    "textAlign": "center",
+                    "color": "rgba(255, 255, 255, 1)",
+                    "fontFamily": "Roboto, sans-serif",
+                    "fontSize": "29px",
+                    "letterSpacing": "4.3545px",
+                    "fontWeight": "300"
+                  }
+                }
+              }
+            ],
+            "responsiveStyles": {
+              "large": {
+                "display": "flex",
+                "flexDirection": "row",
+                "position": "relative",
+                "flexShrink": "0",
+                "boxSizing": "border-box",
+                "justifyContent": "center"
+              }
+            }
+          },
+          {
+            "@type": "@builder.io/sdk:Element",
+            "@version": 2,
+            "id": "builder-a46117e9869e4a0f8db24e8bc19abb6e",
+            "component": {
+              "name": "Columns",
+              "options": {
+                "columns": [
+                  {
+                    "blocks": [
+                      {
+                        "@type": "@builder.io/sdk:Element",
+                        "@version": 2,
+                        "id": "builder-8c7c7eb25fb1473e9aa1f38b52de2336",
+                        "component": {
+                          "name": "Text",
+                          "options": {
+                            "text": "<p><strong>Product</strong></p>\n<p>\n  <a\n    href=\"https://www.builder.io/m/visual-cms\"\n    rel=\"noopener noreferrer\"\n    target=\"_blank\"\n    >Visual CMS</a\n  >\n</p>\n<p>\n  <a\n    href=\"https://www.builder.io/m/theme-studio\"\n    rel=\"noopener noreferrer\"\n    target=\"_blank\"\n    >Theme Studio for Shopify</a\n  >\n</p>\n"
+                          }
+                        },
+                        "responsiveStyles": {
+                          "large": {
+                            "display": "flex",
+                            "flexDirection": "column",
+                            "alignItems": "stretch",
+                            "flexShrink": "0",
+                            "position": "relative",
+                            "marginTop": "10px",
+                            "textAlign": "center",
+                            "lineHeight": "normal",
+                            "height": "auto",
+                            "color": "rgba(255, 255, 255, 1)"
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "blocks": [
+                      {
+                        "@type": "@builder.io/sdk:Element",
+                        "@version": 2,
+                        "id": "builder-f2811248f90044d5ad6733afcfa0a247",
+                        "component": {
+                          "name": "Text",
+                          "options": {
+                            "text": "<p><strong>Featured Integrations</strong></p><p><a href=\"https://www.builder.io/m/react\" rel=\"noopener noreferrer\" target=\"_blank\">React</a></p><p><a href=\"https://www.builder.io/m/angular\" rel=\"noopener noreferrer\" target=\"_blank\">Angular</a></p><p><a href=\"https://www.builder.io/m/nextjs\" rel=\"noopener noreferrer\" target=\"_blank\">Next.js</a></p><p><a href=\"https://www.builder.io/m/gatsby\" rel=\"noopener noreferrer\" target=\"_blank\">Gatsby</a></p>"
+                          }
+                        },
+                        "responsiveStyles": {
+                          "large": {
+                            "display": "flex",
+                            "flexDirection": "column",
+                            "alignItems": "stretch",
+                            "flexShrink": "0",
+                            "position": "relative",
+                            "marginTop": "10px",
+                            "textAlign": "center",
+                            "lineHeight": "normal",
+                            "height": "auto",
+                            "color": "rgba(255, 255, 255, 1)"
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "blocks": [
+                      {
+                        "@type": "@builder.io/sdk:Element",
+                        "@version": 2,
+                        "id": "builder-cb7ecce2452040af9c69122f664352b4",
+                        "component": {
+                          "name": "Text",
+                          "options": {
+                            "text": "<p><strong>Resources</strong></p><p><a href=\"https://www.builder.io/c/docs/guides/page-building\" rel=\"noopener noreferrer\" target=\"_blank\">User Guides</a></p><p><a href=\"https://www.builder.io/c/docs/getting-started\" rel=\"noopener noreferrer\" target=\"_blank\">Developer Docs</a></p><p><a href=\"https://forum.builder.io/\" rel=\"noopener noreferrer\" target=\"_blank\">Forum</a></p><p><a href=\"https://www.builder.io/blog\" rel=\"noopener noreferrer\" target=\"_blank\">Blog</a></p><p><a href=\"https://github.com/builderio/builder\" rel=\"noopener noreferrer\" target=\"_blank\">Github</a></p>"
+                          }
+                        },
+                        "responsiveStyles": {
+                          "large": {
+                            "display": "flex",
+                            "flexDirection": "column",
+                            "alignItems": "stretch",
+                            "flexShrink": "0",
+                            "position": "relative",
+                            "marginTop": "10px",
+                            "textAlign": "center",
+                            "lineHeight": "normal",
+                            "height": "auto",
+                            "color": "rgba(255, 255, 255, 1)"
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "blocks": [
+                      {
+                        "@type": "@builder.io/sdk:Element",
+                        "@version": 2,
+                        "id": "builder-9224d8263a664bc696b0f82602e986ba",
+                        "component": {
+                          "name": "Text",
+                          "options": {
+                            "text": "<p><strong>Get In Touch</strong></p><p><strong><span class=\"ql-cursor\">﻿</span></strong><a href=\"https://twitter.com/builderio\" rel=\"noopener noreferrer\" target=\"_blank\">Twitter</a></p><p><a href=\"https://www.linkedin.com/company/builder-io/\" rel=\"noopener noreferrer\" target=\"_blank\">Linkedin</a></p><p><a href=\"https://www.builder.io/m/careers\" rel=\"noopener noreferrer\" target=\"_blank\">Careers</a></p>"
+                          }
+                        },
+                        "responsiveStyles": {
+                          "large": {
+                            "display": "flex",
+                            "flexDirection": "column",
+                            "alignItems": "stretch",
+                            "flexShrink": "0",
+                            "position": "relative",
+                            "marginTop": "10px",
+                            "textAlign": "center",
+                            "lineHeight": "normal",
+                            "height": "auto",
+                            "color": "rgba(255, 255, 255, 1)"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "space": 20,
+                "stackColumnsAt": "tablet"
+              }
+            },
+            "responsiveStyles": {
+              "large": {
+                "display": "flex",
+                "flexDirection": "column",
+                "alignItems": "stretch",
+                "position": "relative",
+                "flexShrink": "0",
+                "boxSizing": "border-box",
+                "marginTop": "20px"
+              }
+            }
+          }
+        ],
+        "responsiveStyles": {
+          "large": {
+            "display": "flex",
+            "flexDirection": "column",
+            "alignItems": "stretch",
+            "position": "relative",
+            "flexShrink": "0",
+            "boxSizing": "border-box",
+            "marginTop": "0px",
+            "paddingLeft": "20px",
+            "paddingRight": "20px",
+            "paddingTop": "50px",
+            "paddingBottom": "50px",
+            "width": "100vw",
+            "marginLeft": "calc(50% - 50vw)",
+            "backgroundColor": "rgba(85,117,113,1)"
+          }
+        }
+      },
+      {
+        "@type": "@builder.io/sdk:Element",
+        "@version": 2,
+        "tagName": "img",
+        "id": "builder-pixel-j7kyh3hcasi",
+        "properties": {
+          "src": "https://cdn.builder.io/api/v1/pixel?apiKey=bc2b10075b4046a7810143f7f3238f51",
+          "role": "presentation",
+          "width": "0",
+          "height": "0"
+        },
+        "responsiveStyles": {
+          "large": {
+            "height": "0",
+            "width": "0",
+            "display": "inline-block",
+            "opacity": "0",
+            "overflow": "hidden",
+            "pointerEvents": "none"
+          }
+        }
+      },
+      {
+        "id": "builder-pixel-i0k85bluvcg",
+        "@type": "@builder.io/sdk:Element",
+        "tagName": "img",
+        "properties": {
+          "src": "https://cdn.builder.io/api/v1/pixel?apiKey=6d39f4449e2b4e6792a793bb8c1d9615",
+          "role": "presentation",
+          "width": "0",
+          "height": "0"
+        },
+        "responsiveStyles": {
+          "large": {
+            "height": "0",
+            "width": "0",
+            "display": "inline-block",
+            "opacity": "0",
+            "overflow": "hidden",
+            "pointerEvents": "none"
+          }
+        }
+      }
+    ]
+  },
+  "id": "930fc042157241c5963b5283604604bf",
+  "lastUpdated": 1612502997817,
+  "lastUpdatedBy": "4FFFg0MNRJT0z0nW4uUizDHfHJV2",
+  "meta": {
+    "hasLinks": false,
+    "kind": "component",
+    "needsHydration": false,
+    "shopifyDomain": "builder-io-demo.myshopify.com/"
+  },
+  "modelId": "f0943894ca9241bc9e9cd4967dc33ac6",
+  "name": "footer",
+  "published": "published",
+  "query": [],
+  "rev": "5lw5pfjdqwf",
+  "screenshot": "https://cdn.builder.io/api/v1/image/assets%2F6d39f4449e2b4e6792a793bb8c1d9615%2Fc59c84fc97c54c8aa4341fe3f81b05ed",
+  "testRatio": 1,
+  "variations": {}
+}

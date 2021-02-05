@@ -14,9 +14,7 @@ const ProductPage: React.FC<ProductPageProps> = ({
 }) => {
   const product = shopifyProduct!;
   const content = allBuilderModels?.oneProductPageTemplate?.content;
-  return (
-    <AwareBuilderComponent content={content} data={{ product }} model="product-page-template" />
-  );
+  return <AwareBuilderComponent content={content} data={{ product }} model="product-page" />;
 };
 
 export default ProductPage;

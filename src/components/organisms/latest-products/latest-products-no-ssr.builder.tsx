@@ -2,7 +2,7 @@ import React from 'react';
 import { Builder, builder } from '@builder.io/react';
 import loadable from '@loadable/component';
 import UnderTheFold from '../../atoms/under-the-fold';
-builder.init(process.env.BUILDER_API_KEY!);
+builder.init(process.env.GATSBY_BUILDER_API_KEY!);
 
 const LazyLatesProducts = loadable(() => import('./latest-products'), { ssr: false });
 
