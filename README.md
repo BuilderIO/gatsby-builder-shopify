@@ -76,6 +76,9 @@ It'll start a dev server at `http://localhost:8000`
 ### Deploy
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/BuilderIO/gatsby-builder-shopify)
+For continuous deployment from netlify <> Builder.io :
+- Create a [build hook](https://docs.netlify.com/configure-builds/build-hooks/) in netlify
+- Add the build hook from last step to Builder.io global webhooks in your new [space settings](https://builder.io/account/space).
 
 
 ## 🧐 What's inside?
