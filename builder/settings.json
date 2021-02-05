@@ -2,8 +2,6 @@
   "hasIntegrated": "remote",
   "name": "gatsby-shopufy-space-template-take-2",
   "@version": 5,
-  "type": "space",
-  "trialStartDate": 1612487715551,
   "settings": {
     "componentsOnlyMode": false,
     "editorShowShopifyBlocks": true,
@@ -19,7 +17,6 @@
     },
     "allowBuiltInComponents": true
   },
-  "parentOrganization": "d8efe366bbd84e9bbc10fe6d1dc50753",
   "siteUrl": "http://localhost:8000",
   "customTargetingAttributes": {
     "productHandle": {
