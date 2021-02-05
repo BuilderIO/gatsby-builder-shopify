@@ -12,7 +12,6 @@
       }
     ],
     "inputs": [],
-    "jsCode": "setInterval((function(){return console.log(\"state allProducts \",state.allProducts)}),2e3)",
     "state": {
       "deviceSize": "large",
       "location": {
