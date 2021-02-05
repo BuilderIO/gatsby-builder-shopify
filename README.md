@@ -75,7 +75,7 @@ It'll start a dev server at `http://localhost:8000`
 
 ### Deploy
 
-[![Deploy to Netlify](https://app.netlify.com/start/deploy?repository=https://github.com/BuilderIO/gatsby-builder-shopify)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/BuilderIO/gatsby-builder-shopify)
 
 
 ## 🧐 What's inside?
