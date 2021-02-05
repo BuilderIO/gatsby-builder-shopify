@@ -1,0 +1,232 @@
+{
+  "@originContentId": "05bebde85a511d7f4d24022a3b39ed4898ee4aef5158ca924095e8cb90306581",
+  "@originModelId": "91d31d75ea8ba088b415daa0ac4c264334e7d6e807d7097545bffe0565f56be9",
+  "@originOrg": "6d39f4449e2b4e6792a793bb8c1d9615",
+  "createdBy": "agZ9n5CUKRfbL9t6CaJOyVSK4Es2",
+  "createdDate": 1602290403960,
+  "data": {
+    "cssCode": "/*\n* Custom CSS styles\n*\n* Global by default, but use `&` to scope to just this content, e.g.\n* \n*   & .foo {\n*     color: 'red'\n*   }\n*/\n\n",
+    "customFonts": [
+      {
+        "family": "Roboto",
+        "isUserFont": true
+      }
+    ],
+    "inputs": [],
+    "state": {
+      "deviceSize": "large",
+      "location": {
+        "path": "",
+        "query": {}
+      }
+    },
+    "blocks": [
+      {
+        "@type": "@builder.io/sdk:Element",
+        "@version": 2,
+        "layerName": "Ribbon",
+        "id": "builder-c3fa0cdb9630416699f19274de80cd38",
+        "children": [
+          {
+            "@type": "@builder.io/sdk:Element",
+            "@version": 2,
+            "id": "builder-413058d87b054c67a370e6570ffdda50",
+            "component": {
+              "name": "Text",
+              "options": {
+                "text": "<p>Build, target, schedule, a/b test, rinse, and repeat</p>"
+              }
+            },
+            "responsiveStyles": {
+              "large": {
+                "display": "flex",
+                "flexDirection": "column",
+                "alignItems": "stretch",
+                "position": "relative",
+                "flexShrink": "0",
+                "boxSizing": "border-box",
+                "marginTop": "5px",
+                "lineHeight": "normal",
+                "height": "auto",
+                "textAlign": "center",
+                "color": "rgba(238, 238, 238, 1)"
+              }
+            }
+          }
+        ],
+        "responsiveStyles": {
+          "large": {
+            "display": "flex",
+            "flexDirection": "column",
+            "alignItems": "stretch",
+            "position": "relative",
+            "flexShrink": "0",
+            "boxSizing": "border-box",
+            "height": "30px",
+            "backgroundColor": "rgba(85, 117, 113, 1)"
+          }
+        }
+      },
+      {
+        "@type": "@builder.io/sdk:Element",
+        "@version": 2,
+        "id": "builder-053ba089238a409db878ae9a3db7315e",
+        "component": {
+          "name": "Header",
+          "options": {
+            "siteTitle": "Builder.io Swag Store"
+          }
+        },
+        "responsiveStyles": {
+          "large": {
+            "display": "flex",
+            "flexDirection": "column",
+            "alignItems": "stretch",
+            "position": "relative",
+            "flexShrink": "0",
+            "boxSizing": "border-box"
+          }
+        }
+      },
+      {
+        "@type": "@builder.io/sdk:Element",
+        "@version": 2,
+        "layerName": "Page made in Builder.io badge",
+        "tagName": "a",
+        "id": "builder-cc34685e1c794cfa97019911d885763e",
+        "properties": {
+          "target": "_blank",
+          "href": "https://github.com/BuilderIO/builder/tree/master/examples/builder-io-site"
+        },
+        "linkUrl": "https://github.com/BuilderIO/builder/tree/master/examples/builder-io-site",
+        "animations": [
+          {
+            "trigger": "pageLoad",
+            "animation": "fadeInUp",
+            "steps": [
+              {
+                "id": "6222f4ca669f4d148a5d6cf57922d60d",
+                "isStartState": false,
+                "styles": {
+                  "opacity": "0",
+                  "transform": "translate3d(0, 20px, 0)"
+                },
+                "delay": 0
+              },
+              {
+                "id": "bfbf9b7302084b32aa51f8974e67708c",
+                "isStartState": false,
+                "styles": {
+                  "opacity": "1",
+                  "transform": "none"
+                },
+                "delay": 0
+              }
+            ],
+            "delay": 1,
+            "duration": 1,
+            "easing": "cubic-bezier(.37,.01,0,.98)",
+            "repeat": false
+          }
+        ],
+        "component": {
+          "name": "Text",
+          "options": {
+            "text": "<p>This page was made in Builder!</p>"
+          }
+        },
+        "responsiveStyles": {
+          "large": {
+            "display": "flex",
+            "flexDirection": "column",
+            "alignItems": "stretch",
+            "position": "fixed",
+            "flexShrink": "0",
+            "boxSizing": "border-box",
+            "textShadow": "0 1px 0 rgba(0, 0, 0, 0.08)",
+            "fontWeight": "500",
+            "backgroundImage": "linear-gradient(160deg, rgb(210, 238, 245) -25%, rgb(1, 185, 241) 29%, rgb(0, 126, 193) 115%)",
+            "pointerEvents": "auto",
+            "zIndex": "10",
+            "fontSize": "14px",
+            "boxShadow": "rgba(0, 0, 0, 0.2) 0px 5px 5px -3px, rgba(0, 0, 0, 0.14) 0px 8px 10px 1px, rgba(0, 0, 0, 0.12) 0px 3px 14px 2px",
+            "borderColor": "rgba(0, 0, 0, 0.13)",
+            "borderWidth": "1px",
+            "borderStyle": "none",
+            "color": "rgba(255, 255, 255, 1) !important",
+            "borderRadius": "50px",
+            "paddingRight": "20px",
+            "paddingBottom": "10px",
+            "paddingLeft": "20px",
+            "paddingTop": "10px",
+            "textAlign": "center",
+            "lineHeight": "normal",
+            "left": "20px",
+            "bottom": "20px",
+            "height": "auto",
+            "marginTop": "20px",
+            "cursor": "pointer"
+          }
+        }
+      },
+      {
+        "id": "builder-pixel-mymg1f1mo3s",
+        "@type": "@builder.io/sdk:Element",
+        "tagName": "img",
+        "properties": {
+          "src": "https://cdn.builder.io/api/v1/pixel?apiKey=bc2b10075b4046a7810143f7f3238f51",
+          "role": "presentation",
+          "width": "0",
+          "height": "0"
+        },
+        "responsiveStyles": {
+          "large": {
+            "height": "0",
+            "width": "0",
+            "display": "inline-block",
+            "opacity": "0",
+            "overflow": "hidden",
+            "pointerEvents": "none"
+          }
+        }
+      },
+      {
+        "id": "builder-pixel-x8c9tlk551i",
+        "@type": "@builder.io/sdk:Element",
+        "tagName": "img",
+        "properties": {
+          "src": "https://cdn.builder.io/api/v1/pixel?apiKey=6d39f4449e2b4e6792a793bb8c1d9615",
+          "role": "presentation",
+          "width": "0",
+          "height": "0"
+        },
+        "responsiveStyles": {
+          "large": {
+            "height": "0",
+            "width": "0",
+            "display": "inline-block",
+            "opacity": "0",
+            "overflow": "hidden",
+            "pointerEvents": "none"
+          }
+        }
+      }
+    ]
+  },
+  "id": "43812700930546a4aa936f436bbcb742",
+  "lastUpdated": 1607459580491,
+  "lastUpdatedBy": "agZ9n5CUKRfbL9t6CaJOyVSK4Es2",
+  "meta": {
+    "hasLinks": true,
+    "kind": "component",
+    "needsHydration": false
+  },
+  "modelId": "764f7e7e26734333966143c09073cf75",
+  "name": "header",
+  "published": "published",
+  "query": [],
+  "rev": "3tywl35h95b",
+  "screenshot": "https://cdn.builder.io/api/v1/image/assets%2Fbc2b10075b4046a7810143f7f3238f51%2F1032575042964ddcacd51d813a4a7996",
+  "testRatio": 1,
+  "variations": {}
+}

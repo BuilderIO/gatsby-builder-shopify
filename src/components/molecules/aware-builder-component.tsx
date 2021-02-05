@@ -5,15 +5,11 @@ import React from 'react';
 import Link from '../atoms/link';
 import { useCartCount, useAddItemToCart } from 'gatsby-theme-shopify-manager/src';
 
-const apiKey = process.env.BUILDER_API_KEY;
+const apiKey = process.env.GATSBY_BUILDER_API_KEY;
 builder.init(apiKey!);
 Builder.isStatic = true;
 
-const AwareBuilderComponent: React.FC<Partial<BuilderPageProps>> = ({
-  content,
-  data,
-  ...props
-}) => {
+const AwareBuilderComponent: React.FC<Partial<BuilderPageProps>> = props => {
   const cartCount = useCartCount();
   const addItem = useAddItemToCart();
   return (
@@ -26,10 +22,6 @@ const AwareBuilderComponent: React.FC<Partial<BuilderPageProps>> = ({
         return <a {...props} />;
       }}
       context={{ cartCount, addItem }}
-      data={{
-        ...data,
-      }}
-      {...(!Builder.isEditing && !Builder.isPreviewing && content && { content })}
       {...props}
     />
   );

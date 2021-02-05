@@ -1,0 +1,42 @@
+{
+  "hasIntegrated": "remote",
+  "name": "gatsby-shopufy-space-template-take-2",
+  "@version": 5,
+  "settings": {
+    "componentsOnlyMode": false,
+    "editorShowShopifyBlocks": true,
+    "plugins": {
+      "@builder.io/plugin-shopify": {
+        "hasConnected": true,
+        "apiPassword": "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",
+        "storefrontAccessToken": "dd0057d1e48d2d61ca8ec27b07d3c5e6",
+        "syncPreviewUrlWithTargeting": true,
+        "apiKey": "14f064d7f94eeaadf93bd8690fca1207",
+        "storeDomain": "builder-io-demo.myshopify.com/"
+      }
+    },
+    "allowBuiltInComponents": true
+  },
+  "siteUrl": "http://localhost:8000",
+  "customTargetingAttributes": {
+    "productHandle": {
+      "type": "ShopifyProductHandle"
+    }
+  },
+  "loadPlugins": [
+    "@builder.io/plugin-shopify@dev"
+  ],
+  "cloneInfo": {
+    "contentIdMap": {
+      "05bebde85a511d7f4d24022a3b39ed4898ee4aef5158ca924095e8cb90306581": "43812700930546a4aa936f436bbcb742",
+      "d9573746dfd2716a279baa9d44f324c0eb8d04df639d82619e5944ea2964a8d3": "ca24094e6bca4be885bf943d9e00686d",
+      "882089ce8e164dcb6034d183d631785a6c1f99ec93b9b54acd379fa1278cd66b": "930fc042157241c5963b5283604604bf"
+    },
+    "modelIdMap": {
+      "7c834559dcc183dd381b13ae41cd7bd325ecceba05de9f24b61fd3428c583fc9": "37e2bb9c9af7414b83a142c792be2485",
+      "91d31d75ea8ba088b415daa0ac4c264334e7d6e807d7097545bffe0565f56be9": "764f7e7e26734333966143c09073cf75",
+      "9ff7804e017c8ccfebb2a558f605acf8d2379ad11300a983cfa6440fcdad87a7": "7cdf9fb295ef4d53a46ecd8e27a6716d",
+      "ec0f6f43702ca2ce531fac106bc15bf0701a97e691c6681171cf33cce9158623": "f0943894ca9241bc9e9cd4967dc33ac6"
+    }
+  }
+}

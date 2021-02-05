@@ -4,7 +4,7 @@ exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions;
   return graphql(`
     {
-      allShopifyProduct(limit: 50) {
+      allShopifyProduct(limit: 70) {
         edges {
           node {
             handle

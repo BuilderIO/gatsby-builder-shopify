@@ -1067,12 +1067,12 @@
     node-fetch "^1.7.3"
     uuid "^3.3.3"
 
-"@builder.io/react@1.1.31":
-  version "1.1.31"
-  resolved "https://registry.yarnpkg.com/@builder.io/react/-/react-1.1.31.tgz#f735221ef1a9d646d8d8599611243d3427ed6bb8"
-  integrity sha512-ndxrwmOZhXc+7QbsiP8XpT5YpUqOIZWsxrsVfB4nrpePTZwvsewxUQOObmDf7RjqEl35L4tLjsotnbTILYNrIQ==
+"@builder.io/react@^1.1.34-10":
+  version "1.1.34-10"
+  resolved "https://registry.yarnpkg.com/@builder.io/react/-/react-1.1.34-10.tgz#f6583965ac6a419192464f70ede5ebacb3277fff"
+  integrity sha512-etpSj0UkSAgO8bU0rKx1E20PT93XHVcpOm4MVWd8GmACQLD1LWm1UKknI+fSxBtmxZrHq4c3dcFI+0un39dgcg==
   dependencies:
-    "@builder.io/sdk" "^1.1.20"
+    "@builder.io/sdk" "^1.1.22-1"
     "@emotion/core" "^10.0.17"
     hash-sum "^2.0.0"
     preact "^10.1.0"
@@ -1085,10 +1085,10 @@
     node-fetch "^2.3.0"
     prop-types "^15.7.2"
 
-"@builder.io/sdk@^1.1.20":
-  version "1.1.20"
-  resolved "https://registry.yarnpkg.com/@builder.io/sdk/-/sdk-1.1.20.tgz#04fa6bc81ae7421f4527e5aa928b784a1b295eed"
-  integrity sha512-shT9+K4O7pKrfmd8cpi+AuALZMxGw5sSZkLqg0jI5o0MrjRrTRU4e5by3sBUHP68JUtpV2UEuCD1cODhaAs3EQ==
+"@builder.io/sdk@^1.1.22-1":
+  version "1.1.22-2"
+  resolved "https://registry.yarnpkg.com/@builder.io/sdk/-/sdk-1.1.22-2.tgz#c3c96be3b0fda68cc3f63f3c167955820cd09b7a"
+  integrity sha512-T1PMwRo91APt2lVlLrgEXu/eld9vU0QNWYxDEaDsQAdikcQbEcIn2frSgum0FqGbbnMTugyCCqmwA3BXtza48A==
   dependencies:
     hash-sum "^2.0.0"
     node-fetch "^2.2.0"
@@ -1913,29 +1913,6 @@
     native-url "^0.2.6"
     schema-utils "^2.6.5"
     source-map "^0.7.3"
-
-"@prefresh/babel-plugin@^0.2.0":
-  version "0.2.2"
-  resolved "https://registry.yarnpkg.com/@prefresh/babel-plugin/-/babel-plugin-0.2.2.tgz#b921f0a1350a9daa9106518378a4e5a49211e6f6"
-  integrity sha512-NDPMsDs5QncSdOX7zsATwypf1IWtYvOX23X3t4DOcZsVErRABqdlUTZ2RAf4KfOAIjSZhR9p0Htchqp8rQr14Q==
-
-"@prefresh/core@^0.8.1":
-  version "0.8.1"
-  resolved "https://registry.yarnpkg.com/@prefresh/core/-/core-0.8.1.tgz#d4f15d9e3ee9c16bf420405e2b422774e807a594"
-  integrity sha512-woho+Ja8w3pxnZwq68MnWzH9ffdidrpJsV6PDTNIsJOpsLYmfCNxqxGsxIqYw40d1yjg4h6HFGbb6Y9lhyTPNA==
-
-"@prefresh/utils@^0.3.1":
-  version "0.3.1"
-  resolved "https://registry.yarnpkg.com/@prefresh/utils/-/utils-0.3.1.tgz#f9e1a5e1fa4bc02989980733950e60520f0f9869"
-  integrity sha512-9kLzPWN4teeiKuc+Rle3SF/hyx5lzo35X4rHr+kQXnJT+BaEb1ymDWIHGkv85xjnw8+l6I1r1H7JB4BHOMJfmg==
-
-"@prefresh/webpack@^1.0.2":
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/@prefresh/webpack/-/webpack-1.1.0.tgz#a36fd072ef1d5cd88ced8df89d7ae62bdbddf71b"
-  integrity sha512-a3JG2maH3bacDobb4WywVTuqvAyBxJ7dRNSG2Ywv1AytAdgpgNZKJpR4xUTzPTwPGpRkfNOOf4mODqoOZ7W0Sw==
-  dependencies:
-    "@prefresh/core" "^0.8.1"
-    "@prefresh/utils" "^0.3.1"
 
 "@reach/alert@0.10.3":
   version "0.10.3"
@@ -7463,14 +7440,6 @@ gatsby-plugin-page-creator@^2.3.32:
     globby "^11.0.1"
     graphql "^14.7.0"
     lodash "^4.17.20"
-
-gatsby-plugin-preact@^4.0.13:
-  version "4.0.15"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-preact/-/gatsby-plugin-preact-4.0.15.tgz#dcda953d95cf852a6b6518cda779a10a7152fe73"
-  integrity sha512-bnqKFDPAxzKyNkrDbYdm45jOlCy/279Cgo2BpuMs15iNsxhtHNSONFrG+ayip7q9ZTx0Lzu7LXkGyYnmTpYHCQ==
-  dependencies:
-    "@prefresh/babel-plugin" "^0.2.0"
-    "@prefresh/webpack" "^1.0.2"
 
 gatsby-plugin-react-helmet@^3.3.6:
   version "3.3.14"
