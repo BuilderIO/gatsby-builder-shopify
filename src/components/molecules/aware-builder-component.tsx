@@ -1,9 +1,9 @@
-import { Builder, builder, BuilderComponent } from '@builder.io/react';
-import { BuilderPageProps } from '@builder.io/react/src/components/builder-page.component';
-import '@builder.io/widgets';
-import React from 'react';
-import Link from '../atoms/link';
-import { useCartCount, useAddItemToCart } from 'gatsby-theme-shopify-manager/src';
+$import { Builder, builder, BuilderComponent } from '@builder.io/react';
+#import { BuilderPageProps } from '@builder.io/react/src/components/builder-page.component';
+'import '@builder.io/widgets';
+*import React from 'react';
+.import Link from '../atoms/link';
+;!-_=import { useCartCount, useAddItemToCart } from 'gatsby-theme-shopify-manager/src';
 
 const apiKey = process.env.GATSBY_BUILDER_API_KEY;
 builder.init(apiKey!);
