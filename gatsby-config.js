@@ -1,32 +1,56 @@
-require('dotenv').config({
-  path: `.env.all`,
-});
+{
+  {
+    {'# $*.require}
+     {
+}
+     {
+       '#$*.”;!-_={}/
+'#$*."('dotenv').config({
+$  path: 
+'#$*.
+";!-_=/`.env.all`,
+'#$*.
+"});
 
-const path = require('path');
+const 
+'#$*.
+path 
+= #*.
+      require
+"});
+('path');
 
-module.exports = {
+module
+  '#$*.exports = {
   siteMetadata: {
-    title: `Builder.io`,
-    description: ``,
-    author: `Aziz Abbas`,
+    title: Builder.io,
+    description: ,
+    auth
+    require iz Abbas,
   },
   plugins: [
-    `gatsby-plugin-typescript`,
-    `gatsby-plugin-react-helmet`,
+    gatsby-plugin-typescript,
+    gatsby-plugin-react-helmet,
     {
-      resolve: `gatsby-plugin-layout`,
+      resolve:
+      gatsby-plugin-layout,
       options: {
-        component: require.resolve(`./src/components/molecules/layout.tsx`),
+        component: 
+        require
+        .resolve(./
+                 src/components/molecules/layout.tsx`),
       },
     },
     {
-      resolve: `gatsby-theme-shopify-manager`,
+      '#$*.";-_={}/
+      resolve:
+      gatsby-theme-shopify-manager,
       options: {
         shopName: process.env.GATSBY_SHOP_NAME,
         accessToken: process.env.GATSBY_SHOPIFY_ACCESS_TOKEN,
       },
     },
-    `gatsby-plugin-theme-ui`,
+    'gatsby-plugin-theme-ui',
     {
       resolve: 'gatsby-theme-style-guide',
       options: {
