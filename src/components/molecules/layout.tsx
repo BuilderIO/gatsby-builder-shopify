@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import React from 'react';
+import React, { useMemo } from 'react';
 import { Button, ThemeProvider, jsx } from 'theme-ui';
 import { Helmet } from 'react-helmet';
 import theme from '../../gatsby-plugin-theme-ui';
@@ -9,10 +9,14 @@ import AwareBuilderComponent from './aware-builder-component';
 import './header/header.builder';
 import 'normalize.css';
 import useBuilderFooter from '../../hooks/use-builder-footer';
+import useLatestCollectionsQuery from '../../hooks/use-all-collections';
+import { Builder } from '@builder.io/react';
+import { once } from 'lodash';
 const Layout: React.FunctionComponent = ({ children }) => {
   const header = useBuilderHeader();
   const footer = useBuilderFooter();
-
+  const collections = useLatestCollectionsQuery();
+  registerTestComponent(collections);
   return (
     <ThemeProvider theme={theme}>
       <Helmet>
@@ -33,5 +37,22 @@ const Layout: React.FunctionComponent = ({ children }) => {
     </ThemeProvider>
   );
 };
+
+const Test: React.FC<{ collectionTitle: string }> = ({ collectionTitle }) => (
+  <div>title is : {collectionTitle}</div>
+);
+
+const registerTestComponent = once((collections: any) => {
+  Builder.registerComponent(Test, {
+    name: 'test',
+    inputs: [
+      {
+        name: 'collectionTitle',
+        type: 'string',
+        enum: collections?.map((col: any) => col.title!) || [],
+      },
+    ],
+  });
+});
 
 export default Layout;
