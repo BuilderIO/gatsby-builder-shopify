@@ -8,7 +8,7 @@
     "plugins": {
       "@builder.io/plugin-shopify": {
         "hasConnected": true,
-        "apiPassword": "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",
+        "apiPassword": "YOUR_SHOPIFY_ADMIN_API_PASSWORD",
         "storefrontAccessToken": "dd0057d1e48d2d61ca8ec27b07d3c5e6",
         "syncPreviewUrlWithTargeting": true,
         "apiKey": "14f064d7f94eeaadf93bd8690fca1207",
