@@ -52,6 +52,8 @@ Create a [private app](https://help.shopify.com/en/manual/apps/private-apps) in 
 
 Access your newly created space, by selecting it from the [list of spaces](https://builder.io/spaces) in your organization, then from space settings, configure the `@builder.io/plugin-shopify` with the required details: admin api key / password, store domain, please feel free to ignore the `import your products/collections` step since it's not needed for this starter.
 
+> ⚠️ Configure these Shopify admin credentials through the Builder.io space settings UI as described above. `builder/settings.json` in this repo is only a template — the `apiPassword` field there is a placeholder and must never be replaced with a real credential and committed to git.
+
 Add your storefront api token to the .env files (`.env.all`)
 
 ```
